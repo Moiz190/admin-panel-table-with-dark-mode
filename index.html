@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+   <title>Admin panel table</title>
+</head>
+<body>
+    <div class="d-flex admin_panel_container">
+                                                    <!-- side-bar -->
+        <label for="sidebar-toggle" class="side-bar_svg_container d-none sidebar-hamburger">
+            <svg>
+                <use href="#hamburger"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="sidebar-toggle" class="d-none" />
+        <div class="side-bar d-flex column">
+            <div class="d-flex align-center logo-container">
+                <div class="logo d-flex">
+                    <img src="images/side-bar-logo.png" alt="logo" />
+                </div>
+                <span class="ml-1">admin</span>
+            </div>
+            <div class="side-bar_category">
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#user"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Users</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#stars"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Stars</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#categories"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Categories</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#video"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Video</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#subscription"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Subscriptions</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#email"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Appeals</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#aim"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Advertisement</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#affiliation"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Affiliate Program</span>
+                </div>
+                <div class="d-flex align-center pointer">
+                    <div class="side-bar_svg_container">
+                        <svg>
+                            <use href="#bell"></use>
+                        </svg>
+                    </div>
+                    <span class="ml-2 text-svg-color">Notification</span>
+                </div>
+            </div>
+            <div class="text-center color-gray copyright-section mb-2">
+                <span class="">&#169; 2022 VRSex</span>
+            </div>
+        </div>
+                                                    <!-- first description -->
+        <div class="ml-2 mr-1 admin_panel_table_container width-80 p-2">
+        
+            <div class="justify-between topbar d-flex">
+                <div class="d-flex align-center"> 
+                    <div class="d-flex mr-1 pointer"><img src="images/re.png"></div>
+                    <span class="fs-1">User</span><p class="color-gray mr-1 ml-2 top_bar_description">| This is a description</p> 
+               </div>
+
+                <div class="d-flex align-center">
+                    <div class="pointer admin-panel-table-notification-icon mr-1"><svg><use href="#bell"></use></svg></div>
+                    <div class="d-flex align-center"><div class="mr-1"><img src="images/1.png"></div><span class="mb-1"> Alexander</span></div>
+                    <div class="ml-2 mb-1 relative"><label for="language-select" class="pointer"><span class="mr-1">Eng</span><i class="fa-solid fa-chevron-down admin_panel_container_angle_down_icon"></i></label>
+                        <input type="checkbox" id="language-select" class="d-none">
+                    <div class="select-language-dropdown d-none d-flex column">
+                        <span class="pointer">Urdu</span>
+                        <span class="pointer">Eng</span>
+                    </div>
+                    </div> 
+                    
+                    
+                </div>
+            </div>
+                                                    <!-- Search-bar -->
+            <div class="d-flex py-2 justify-between searchbar-container">
+                <div class="search-bar width-80 mb-1">
+                    <input class="w-100 bg-img rounded-md" type="search"  placeholder="User search"/>
+                </div>
+                <div class="mb-1 w-13 d-flex relative searchbar-btn">
+                    <button class="bg-blue text-center width-80 filter-btn pointer">Filter</button>
+                    <label class="bg-blue pointer text-center dropdown-btn" for="dropdown-content-btn"><span><i class="fa-solid fa-chevron-down"></i>
+                    </span></label>
+                    <input type="checkbox" id="dropdown-content-btn" class="d-none" />
+                        <div class="dropdown-content w-100 d-none column rounded-md d-flex">
+                            <label for="paid"><span class="mr-1"><input type="checkbox" id="paid"></span><span class="pointer">Paid for</span></label>
+                            <label for="enabled"><span class="mr-1"><input type="checkbox" id="enabled"></span><span class="pointer">Enabled</span></label>
+                            <label for="locked"><span class="mr-1"><input type="checkbox" id="locked"></span><span class="pointer">Locked</span></label>
+                        </div>
+                </div>
+            </div>              
+                                                    <!-- table  -->
+            <div class="admin_panel_table mb-2 rounded-md">
+                <table class="w-100">
+                    <tr class="text-left">
+                        <th class="dark-gray text-left" width="10%">id</th>
+                        <th class="dark-gray" width="25%"><span>nickname</span></th>
+                        <th class="dark-gray" width="25%"><span>email</span></th>
+                        <th class="dark-gray" width="15%"><span>status</span></th>
+                        <th class="dark-gray" width="15%"><span>locked</span></th>
+                        <th class="dark-gray "></th>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/1.png" /></div><span class="admin_panel_container_username">vrsxuser</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/2.png" /></div><span class="admin_panel_container_username">Lvan Gorelkin</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/3.png" /></div><span class="admin_panel_container_username">Yaxinoria</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_danger text-white rounded-sm">Enabled</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/4.png" /></div><span class="admin_panel_container_username"> Valkiria</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_danger text-white rounded-sm">Enabled</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/4.png" /></div><span class="admin_panel_container_username"> BestGuard</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/6.png" /></div><span class="admin_panel_container_username">Paper</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/4.png" /></div><span class="admin_panel_container_username">Noname</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/8.png" /></div><span class="admin_panel_container_username">UserFrend</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_danger text-white rounded-sm">Enabled</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/9.png" /></div><span class="admin_panel_container_username">Alex</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_danger text-white rounded-sm">Enabled</span></td>
+                        <td>locked</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/10.png" /></div><span class="admin_panel_container_username">Alexandra</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_success text-white rounded-sm">Paid for</span></td>
+                        <td>enabled</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                
+                    <tr>
+                        <td class="text-center">2331221</td>
+                        <td><div class="d-flex align-center"><div class="admin_panel_container_user_dp mr-1"><img src="images/11.png" /></div><span class="admin_panel_container_username">Okesya</span></div></td>
+                        <td>i@msoloviev.com</td>
+                        <td><span class="admin_panel_container_status_danger text-white rounded-sm">Enabled</span></td>
+                        <td>locked</td>
+                        <td><div class="d-flex editing-icons text-center">
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-pencil "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-regular fa-trash-can "></i></div>
+                            <div class="pointer rounded-sm"><i class="fa-solid fa-ban "></i></div>
+                        </div>
+                    </td>
+                    </tr>                 
+                </table>
+            </div>
+            
+            <div class="d-flex justify-between py-2">
+                <div class="color-gray self-center">
+                    <span>Shown <span>19</span> of <span>1,990</span></span>
+                </div>
+                <div class="pagination d-flex">            
+                    <label class="only">
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><i class="fa-solid fa-chevron-left"></i></div>
+                    </label>
+                    <label class="only">
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>1</span></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><i class="fa-solid fa-ellipsis"></i></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>4</span></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>5</span></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>6</span></div>
+                    </label> 
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>7</span></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>8</span></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><i class="fa-solid fa-ellipsis"></i></div>
+                    </label>    
+                    <label>
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><span>100</span></div>
+                    </label>
+                    <label class="only">
+                        <input type="radio" name="num">
+                        <div class="text-center pointer rounded-sm"><i class="fa-solid fa-chevron-right"></i></div>
+                    </label>
+                </div>
+            </div>
+            </div>
+
+        <!-- SVG-images  -->
+           <div class="d-none">
+            
+
+            <!-- star  -->
+            <svg id="stars" viewBox="0 0 18 17" fill="" 
+            xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.52447 1.08156C8.67415 0.620905 9.32585 0.620901 9.47553 1.08156L10.7696 5.06434C10.9704 5.68237 11.5464 6.10081 12.1962 6.10081H16.3839C16.8683 6.10081 17.0697 6.72062 16.6778 7.00532L13.2899 9.46681C12.7641 9.84878 12.5442 10.5258 12.745 11.1439L14.0391 15.1266C14.1887 15.5873 13.6615 15.9704 13.2696 15.6857L9.88168 13.2242C9.35595 12.8422 8.64405 12.8422 8.11832 13.2242L4.73037 15.6857C4.33851 15.9704 3.81127 15.5873 3.96095 15.1266L5.25503 11.1439C5.45584 10.5258 5.23585 9.84878 4.71012 9.46681L1.32217 7.00532C0.930313 6.72062 1.1317 6.10081 1.61606 6.10081H5.8038C6.45364 6.10081 7.02958 5.68237 7.23039 5.06434L8.52447 1.08156Z"
+                 stroke=""/>
+                </svg>
+
+                <!-- menu  -->
+                
+            <svg id="categories" width="" height="" viewBox="0 0 16 13" fill=""
+             xmlns="http://www.w3.org/2000/svg">
+                <line y1="4.5" x2="16" y2="4.5" stroke=""/>
+                <line y1="0.5" x2="16" y2="0.5" stroke=""/>
+                <line y1="8.5" x2="16" y2="8.5" stroke=""/>
+                <line y1="12.5" x2="9" y2="12.5" stroke=""/>
+                </svg>
+                    <!-- video  -->
+                <svg id="video" width="" height="" viewBox="0 0 16 17" fill="" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.601403 1.38599C0.593645 1.01017 0.987806 0.760508 1.32426 0.928131L14.3328 7.40906C14.6814 7.58272 14.7064 8.07061 14.3774 8.279L1.6688 16.3286C1.3398 16.537 0.909397 16.3059 0.90136 15.9165L0.601403 1.38599Z"
+                     stroke=""/>
+                    </svg>
+
+                    <!-- subscription  -->
+                <svg id="subscription" width="" height="" viewBox="0 0 22 22" fill=""
+                 xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10.5" stroke=""/>
+                    <path d="M7 11L10.2941 14L15 7" stroke=""/>
+                    </svg>
+                
+                    <!-- mail -->
+                
+                <svg id="email" width="" height="" viewBox="0 0 24 16" fill=""
+                 xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.55 1.5L12 8.5L22.45 1.5M2.1 15H21.9C22.5075 15 23 14.5523 23 14V2C23 1.44772 22.5075 1 21.9 1H2.1C1.49249 1 1 1.44772 1 2V14C1 14.5523 1.49249 15 2.1 15Z"
+                     stroke=""/>
+                    </svg>
+                
+                    <!-- aim  -->
+                <svg id="aim" width="" height="" viewBox="0 0 22 22" fill=""
+                 xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19.25C13.3348 19.1927 15.279 18.387 16.8327 16.8327C18.3865 15.2785 19.1922 13.3343 19.25 11C19.1927 8.66525 18.387 6.721 16.8327 5.16725C15.2785 3.6135 13.3343 2.80775 11 2.75C8.66525 2.80729 6.721 3.61304 5.16725 5.16725C3.6135 6.72146 2.80775 8.66571 2.75 11C2.80729 13.3348 3.61304 15.279 5.16725 16.8327C6.72146 18.3865 8.66571 19.1922 11 19.25ZM11 20.625C8.27842 20.5535 6.01173 19.6119 4.19994 17.8001C2.38815 15.9883 1.4465 13.7216 1.375 11C1.4465 8.27842 2.38815 6.01173 4.19994 4.19994C6.01173 2.38815 8.27842 1.4465 11 1.375C13.7216 1.4465 15.9883 2.38815 17.8001 4.19994C19.6119 6.01173 20.5535 8.27842 20.625 11C20.5535 13.7216 19.6119 15.9883 17.8001 17.8001C15.9883 19.6119 13.7216 20.5535 11 20.625ZM11 2.0625C11.2008 2.0625 11.3655 2.1269 11.4943 2.25569C11.6231 2.38448 11.6875 2.54925 11.6875 2.75V6.875C11.6875 7.07575 11.6231 7.24052 11.4943 7.36931C11.3655 7.4981 11.2008 7.5625 11 7.5625C10.7992 7.5625 10.6345 7.4981 10.5057 7.36931C10.3769 7.24052 10.3125 7.07575 10.3125 6.875V2.75C10.3125 2.54925 10.3769 2.38448 10.5057 2.25569C10.6345 2.1269 10.7992 2.0625 11 2.0625ZM11 14.4375C11.2008 14.4375 11.3655 14.5019 11.4943 14.6307C11.6231 14.7595 11.6875 14.9242 11.6875 15.125V19.25C11.6875 19.4508 11.6231 19.6155 11.4943 19.7443C11.3655 19.8731 11.2008 19.9375 11 19.9375C10.7992 19.9375 10.6345 19.8731 10.5057 19.7443C10.3769 19.6155 10.3125 19.4508 10.3125 19.25V15.125C10.3125 14.9242 10.3769 14.7595 10.5057 14.6307C10.6345 14.5019 10.7992 14.4375 11 14.4375ZM2.0625 11C2.0625 10.7992 2.1269 10.6345 2.25569 10.5057C2.38448 10.3769 2.54925 10.3125 2.75 10.3125H6.875C7.07575 10.3125 7.24052 10.3769 7.36931 10.5057C7.4981 10.6345 7.5625 10.7992 7.5625 11C7.5625 11.2008 7.4981 11.3655 7.36931 11.4943C7.24052 11.6231 7.07575 11.6875 6.875 11.6875H2.75C2.54925 11.6875 2.38448 11.6231 2.25569 11.4943C2.1269 11.3655 2.0625 11.2008 2.0625 11ZM14.4375 11C14.4375 10.7992 14.5019 10.6345 14.6307 10.5057C14.7595 10.3769 14.9242 10.3125 15.125 10.3125H19.25C19.4508 10.3125 19.6155 10.3769 19.7443 10.5057C19.8731 10.6345 19.9375 10.7992 19.9375 11C19.9375 11.2008 19.8731 11.3655 19.7443 11.4943C19.6155 11.6231 19.4508 11.6875 19.25 11.6875H15.125C14.9242 11.6875 14.7595 11.6231 14.6307 11.4943C14.5019 11.3655 14.4375 11.2008 14.4375 11Z"
+                     fill=""/>
+                    </svg>
+
+                        <!-- affiliation  -->
+                <svg id="affiliation" width="" height="" viewBox="0 0 22 22"
+                 fill="" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10.5" stroke=""/>
+                    <circle cx="11" cy="11" r="7.5" stroke="#"/>
+                    <circle cx="11" cy="11" r="4.5" stroke=""/>
+                    </svg>
+    
+                    <!-- bell  -->
+                
+                <svg id="bell" width="" height="" viewBox="0 0 22 22" fill=""
+                 xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.375C11.3868 1.38921 11.709 1.52533 11.9666 1.78338C12.2242 2.04142 12.3603 2.36362 12.375 2.75V4.125H9.625V2.75C9.63921 2.36317 9.77533 2.04096 10.0334 1.78338C10.2914 1.52579 10.6136 1.38967 11 1.375ZM5.5 16.5H16.5V9.625C16.4569 8.06392 15.9198 6.76775 14.8885 5.7365C13.8573 4.70525 12.5611 4.16808 11 4.125C9.43892 4.16808 8.14275 4.70525 7.1115 5.7365C6.08025 6.76775 5.54308 8.06392 5.5 9.625V16.5ZM11 2.75C12.9479 2.79308 14.57 3.46271 15.8661 4.75887C17.1623 6.05504 17.8319 7.67708 17.875 9.625V17.875H4.125V9.625C4.16808 7.67708 4.83771 6.05504 6.13387 4.75887C7.43004 3.46271 9.05208 2.79308 11 2.75ZM2.0625 16.5H19.9375C20.3958 16.5 20.625 16.7292 20.625 17.1875C20.625 17.6458 20.3958 17.875 19.9375 17.875H2.0625C1.60417 17.875 1.375 17.6458 1.375 17.1875C1.375 16.7292 1.60417 16.5 2.0625 16.5ZM9.625 19.25H12.375C12.3608 19.6368 12.2247 19.959 11.9666 20.2166C11.7086 20.4742 11.3864 20.6032 11 20.6037C10.6136 20.6041 10.2914 20.4751 10.0334 20.2166C9.77533 19.9581 9.63921 19.6359 9.625 19.25Z"
+                     fill=""/>
+                    </svg>
+
+                    <svg id="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" fill=""  stroke="">
+                        <path d="M9 10C10.1747 9.97112 11.1487 9.57008 11.9219 8.79688C12.6951 8.02367 13.0961 7.04971 13.125 5.875C13.0961 4.70029 12.6951 3.72633 11.9219 2.95312C11.1487 2.17992 10.1747 1.77887 9 1.75C7.82529 1.77887 6.85133 2.17992 6.07812 2.95312C5.30492 3.72633 4.90387 4.70029 4.875 5.875C4.90387 7.04971 5.30492 8.02367 6.07812 8.79688C6.85133 9.57008 7.82529 9.97112 9 10ZM9 11.375C7.43892 11.3319 6.14275 10.7948 5.1115 9.7635C4.08025 8.73225 3.54308 7.43608 3.5 5.875C3.54308 4.31392 4.08025 3.01775 5.1115 1.9865C6.14275 0.95525 7.43892 0.418083 9 0.375C10.5611 0.418083 11.8573 0.95525 12.8885 1.9865C13.9198 3.01775 14.4569 4.31392 14.5 5.875C14.4569 7.43608 13.9198 8.73225 12.8885 9.7635C11.8573 10.7948 10.5611 11.3319 9 11.375ZM15.875 18.25V16.1875C15.8608 15.6004 15.6603 15.1134 15.2734 14.7266C14.8866 14.3397 14.3996 14.1392 13.8125 14.125H4.1875C3.60037 14.1392 3.1134 14.3397 2.72656 14.7266C2.33973 15.1134 2.13921 15.6004 2.125 16.1875V18.25C2.125 18.4508 2.0606 18.6155 1.93181 18.7443C1.80302 18.8731 1.63825 18.9375 1.4375 18.9375C1.23675 18.9375 1.07198 18.8731 0.943188 18.7443C0.814396 18.6155 0.75 18.4508 0.75 18.25V16.1875C0.778875 15.2135 1.11552 14.4044 1.75994 13.7599C2.40435 13.1155 3.21354 12.7789 4.1875 12.75H13.8125C14.7865 12.7789 15.5956 13.1155 16.2401 13.7599C16.8845 14.4044 17.2211 15.2135 17.25 16.1875V18.25C17.25 18.4508 17.1856 18.6155 17.0568 18.7443C16.928 18.8731 16.7633 18.9375 16.5625 18.9375C16.3617 18.9375 16.197 18.8731 16.0682 18.7443C15.9394 18.6155 15.875 18.4508 15.875 18.25Z"
+                             fill="" stroke="" />
+                    </svg>
+                    
+                    
+                <svg id="hamburger" width="" height="" viewBox="0 0 25 17" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1H25" stroke=""/>
+                    <path d="M0 8.5H25" stroke=""/>
+                    <path d="M0 16.5H25" stroke=""/>
+                </svg>
+           </div>
+</body>
+</html>
